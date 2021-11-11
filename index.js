@@ -22,6 +22,7 @@ function sendMoney() {
         alert(`Successful Transaction !!\nRs ${AmountPay} is sent to ${Receiver}.`)
 
         // transaction history 
+        document.getElementById("Tran").innerHTML = "Transaction History";
         var createPTag = document.createElement("li");
         var textNode = document.createTextNode(`Amount of Rs. ${AmountPay} is sent from the Sender "${Sender}"
           to Recepient "${Receiver}" on ${Date()}.`);
